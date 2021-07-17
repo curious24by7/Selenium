@@ -9,10 +9,11 @@ public class DragAndDrop {
         System.setProperty("webdriver.chrome.driver","C:\\Users\\soham\\Selenium jars and drivers\\drivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         Actions actions = new Actions(driver);
-        driver.get("http://www.dhtmlgoodies.com/submitted-scripts/i-google-like-dragdrop/index.html");
-        String xp1 = "//h1[.='Block 1']";
+        driver.get("http://www.dhtmlgoodies.com/submitted-scripts/i-google-like-drag-drop/index.html");
+        Thread.sleep(2000);
+        String xp1 = "//h1[contains(text(),'Block 1')]";
         WebElement block1 = driver.findElement(By.xpath(xp1));
-        String xp2 = "//h1[.='Block 3']";
+        String xp2 = "//h1[contains(text(),'Block 4')]";
         WebElement block3 = driver.findElement(By.xpath(xp2));
         actions.dragAndDrop(block1, block3).perform();
     }

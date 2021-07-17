@@ -14,10 +14,10 @@ public class Hover {
         driver.manage().window().maximize();
         driver.get("http://www.actimind.com/");
         WebElement AreaOfExpertise = driver.findElement(By.xpath("//a[contains(text(),'AREAS OF EXPERTISE')]"));
-        //action.moveToElement(AreaOfExpertise).perform();
+        action.moveToElement(AreaOfExpertise).perform();
         Thread.sleep(2000);
         WebElement cloudApp = driver.findElement(By.xpath("//a[contains(text(),'Cloud Applications')]"));
-        //action.moveToElement(cloudApp).click().perform();
-        action.moveToElement(AreaOfExpertise).moveToElement(cloudApp).click().build().perform();
+        action.moveToElement(cloudApp).click().perform();
+        //action.moveToElement(AreaOfExpertise).moveToElement(cloudApp).click().build().perform();
     }
 }

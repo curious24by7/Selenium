@@ -46,6 +46,11 @@ public class ContextClick {
         Thread.sleep(600);
         driver.findElement(By.cssSelector("div[role=\"textbox\"]")).sendKeys("Message Sent using Selenium");
         Thread.sleep(2000);
+        //AttachFile
+       /* driver.findElement(By.xpath("//body/div[@id='app']/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/button[1]/span[1]/div[1]/div[1]/img[1]")).click();
+        Thread.sleep(600);
+        driver.findElement(By.xpath("//span[contains(text(),'Browse this computer')]")).sendKeys("\"C:\\Users\\soham\\Downloads\\1626086716912_System Testing Combine All Scenerios New-pages-deleted.pdf\"");
+        Thread.sleep(3000);*/
         //SendButton
         driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/span[1]/button[1]/span[1]")).click();
         //SentItemsButton
